@@ -203,7 +203,7 @@ extension FirstViewAdvancedViewController : UISearchBarDelegate {
             load()
             tableAdvanced.reloadData()
             DispatchQueue.main.async {
-                searchBar.resignFirstResponder()
+                self.search.resignFirstResponder()
             }
             
         }
