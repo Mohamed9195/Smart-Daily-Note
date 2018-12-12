@@ -1,0 +1,6 @@
+framework module Pods_SaveAny {
+  umbrella header "Pods-SaveAny-umbrella.h"
+
+  export *
+  module * { export * }
+}

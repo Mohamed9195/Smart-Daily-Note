@@ -13,7 +13,6 @@ class Media: UIViewController {
 
     @IBOutlet weak var contanerVideo: UIView!
     @IBOutlet weak var contanerCamira: UIView!
-    @IBOutlet weak var contanerAudio: UIView!
     @IBOutlet weak var contanerRecognize: UIView!
     
     
@@ -23,7 +22,7 @@ class Media: UIViewController {
 
         contanerVideo.isHidden = false
         contanerCamira.isHidden = true
-        contanerAudio.isHidden = true
+        
         contanerRecognize.isHidden = true
         // Do any additional setup after loading the view.
     }
@@ -33,24 +32,19 @@ class Media: UIViewController {
         if sender.selectedSegmentIndex == 0 {
             contanerVideo.isHidden = false
             contanerCamira.isHidden = true
-            contanerAudio.isHidden = true
+           
             contanerRecognize.isHidden = true
             
         }else if sender.selectedSegmentIndex == 1 {
             contanerVideo.isHidden = true
             contanerCamira.isHidden = false
-            contanerAudio.isHidden = true
+            
             contanerRecognize.isHidden = true
         }else if sender.selectedSegmentIndex == 2 {
             contanerVideo.isHidden = true
             contanerCamira.isHidden = true
-            contanerAudio.isHidden = true
+          
             contanerRecognize.isHidden = false
-        }else{
-            contanerVideo.isHidden = true
-            contanerCamira.isHidden = true
-            contanerAudio.isHidden = false
-            contanerRecognize.isHidden = true
         }
     }
     
