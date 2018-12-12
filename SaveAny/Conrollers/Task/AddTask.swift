@@ -33,6 +33,10 @@ class AddTask: UIViewController {
                     realm.add(NewFolder)
                 }
             }
+        }else{
+            let aler = UIAlertController(title: "Missing", message: "complet missing data", preferredStyle: .actionSheet)
+            aler.addAction(UIAlertAction(title: "Done", style: .cancel, handler: nil))
+            present(aler, animated: true, completion: nil)
         }
         
         if let saving = Saving {
